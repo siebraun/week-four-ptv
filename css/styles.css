@@ -1,0 +1,247 @@
+html {
+  background-color: black;
+}
+
+* {
+  font-family: auto-pro-new, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.--centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p,
+h1,
+h2 {
+  color: #aa9c2e;
+}
+
+button {
+  background-color: #aa9c2e;
+  padding: 15px 100px;
+  font-size: 16px;
+}
+
+.button--wide {
+  width: 500px;
+}
+
+.--rounded {
+  border-radius: 10px;
+}
+
+.--black {
+  color: black;
+}
+
+button:hover {
+  color: #635a1a;
+}
+
+nav {
+  height: 70px;
+  background-color: #993921;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+nav .nav__logo h1 {
+  color: black;
+}
+nav .nav__links {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .nav__links a {
+  color: black;
+  text-decoration: none;
+  font-family: auto-pro-new, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.home-content {
+  margin-top: 40px;
+}
+.home-content #home-img {
+  height: 500px;
+  width: 500px;
+  background-image: url("../assets/PTV_PassTheNirvana.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.tour-wrapper .hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/ptv2-scaled.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.tour-wrapper .hero-info button {
+  margin-bottom: 40px;
+}
+.tour-wrapper .tour-dates {
+  width: 90%;
+  margin: 0 auto;
+}
+.tour-wrapper .tour-dates .tour-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px white solid;
+  padding: 2px;
+}
+.tour-wrapper .tour-dates .tour-row p {
+  font-size: 15px;
+}
+.tour-wrapper .tour-dates .tour-row .info p:first-child {
+  margin-bottom: -15px;
+}
+.tour-wrapper .tour-dates button {
+  margin: 10px;
+}
+
+/* albums styling */
+.music-wrapper {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.music-wrapper .album-block {
+  display: flex;
+  margin-bottom: 70px;
+}
+.music-wrapper .album-block .album-cover {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+.music-wrapper .album-block .album-title {
+  margin-left: 30px;
+}
+.music-wrapper .album-block .album-title h2 {
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.music-wrapper .album-block .tracklist {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.music-wrapper .album-block .tracklist p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+.music-wrapper .album-block .tracklist .tracklist-col1 {
+  margin-right: 50px;
+}
+.music-wrapper #album1 {
+  background-image: url(../assets/misadventures.jpg);
+  background-size: cover;
+}
+.music-wrapper #album2 {
+  background-image: url(../assets/collide-with-the-sky.jpg);
+  background-size: cover;
+}
+.music-wrapper #album3 {
+  background-image: url(../assets/selfish-machines.jpg);
+  background-size: cover;
+}
+.music-wrapper #album4 {
+  border: solid 1px black;
+  background-image: url(../assets/flair-for-the-dramatic.jpg);
+  background-size: cover;
+}
+
+/* media queries */
+@media only screen and (max-width: 900px) {
+  #nav {
+    position: relative;
+    width: 300px;
+    margin-left: -90px;
+  }
+  nav .link-container {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery-wrapper,
+.about-wrapper {
+    margin-left: 50px;
+    display: block;
+  }
+  .gallery-wrapper #column2 {
+    margin-top: 1040px;
+  }
+  .about-wrapper {
+    margin-top: -140px;
+  }
+  .about-wrapper .about-photo {
+    width: 400px;
+  }
+  .about-wrapper h1 {
+    margin-top: 30px;
+  }
+  .about-wrapper .about-text {
+    width: 400px;
+  }
+  .album-wrapper {
+    margin-left: 100px;
+  }
+  .album-wrapper .album-block {
+    display: block;
+  }
+  .album-wrapper .album-block h2 {
+    margin-top: 20px;
+  }
+}
+.newsletter-wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+.newsletter-wrapper .newsletter-photo {
+  width: 50%;
+  height: 700px;
+  background-image: url(../assets/preorder.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.newsletter-wrapper .newsletter-text {
+  width: 30%;
+  margin-left: 100px;
+}
+.newsletter-wrapper .newsletter-text .consent {
+  display: flex;
+  align-items: baseline;
+  word-wrap: break-word;
+  margin-bottom: 40px;
+}
+.newsletter-wrapper .newsletter-text .consent p {
+  padding-left: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #993921;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 400px;
+}
+footer img {
+  height: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

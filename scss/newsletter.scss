@@ -1,0 +1,28 @@
+.newsletter-wrapper {
+  display: flex;
+  margin-top: 50px;
+
+  .newsletter-photo {
+    width: 50%;
+    height: 700px;
+    background-image: url(../assets/preorder.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .newsletter-text {
+    width: 30%;
+    margin-left: 100px;
+
+    .consent {
+      display: flex;
+      align-items: baseline;
+      word-wrap: break-word;
+      margin-bottom: 40px;
+
+      p {
+        padding-left: 10px;
+      }
+    }
+  }
+}
